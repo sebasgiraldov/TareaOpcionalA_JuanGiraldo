@@ -1,5 +1,11 @@
 package empresa;
 
+/**
+ * Clase Empleado por horas, con un sueldo basado en el valor por hora y las horas trabajadas, tambien gana bonificación.
+ * @author y-o-p
+ *
+ */
+
 public class PorHoras extends Empleado{
 	
 	private int horas;

@@ -1,5 +1,10 @@
 package empresa;
 
+/**
+ * Clase empleado, con nombre y cedula
+ * @author y-o-p
+ *
+ */
 public abstract class Empleado {
 
 	private String nombre;
@@ -14,6 +19,11 @@ public abstract class Empleado {
 	public abstract void adicionarEmpleado();
 
 	public abstract double getSalario();	
+	
+	@Override
+	public String toString() {
+		return "Nombre: "+nombre+" Cedula: "+cedula+" Salario: "+getSalario();
+	}
 
 	
 }

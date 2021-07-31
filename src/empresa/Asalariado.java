@@ -1,10 +1,17 @@
 package empresa;
 
+/**
+ * Clase Empleado asalariado, con un sueldo fijo semanal o mensual
+ * @author y-o-p
+ *
+ */
+
 public class Asalariado extends Empleado{
 
 	private double salario;
-	public Asalariado(String nombre, int cedula) {
+	public Asalariado(String nombre, int cedula, double salario) {
 		super(nombre, cedula);
+		this.salario = salario;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,5 +25,7 @@ public class Asalariado extends Empleado{
 	public double getSalario() {
 		return salario;
 	}
+	
+	
 
 }
